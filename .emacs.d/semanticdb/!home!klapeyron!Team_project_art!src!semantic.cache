@@ -1,0 +1,194 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("string" include (:system-flag t) nil [19 36])
+            ("main" function (:type "int") nil [38 157]))          
+      :file "main.cpp"
+      :pointmax 158
+      :fsize 157
+      :lastmodtime '(22308 63555 214358 593000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ArtificialIntelligence.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ArtificialIntelligence.hpp" include nil nil [1 38])
+            ("onUpdate" function
+               (:parent "ArtificialIntelligence"
+                :arguments 
+                  ( ("tableSnapshot" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TableSnapshot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78 113]))                  
+                :type "void")
+                nil [40 478])
+            ("ShowGroups" function
+               (:parent "ArtificialIntelligence"
+                :type "void")
+                nil [480 970])
+            ("ShowSeqs" function
+               (:parent "ArtificialIntelligence"
+                :type "void")
+                nil [972 1481])
+            ("AddFindGroups" function
+               (:parent "ArtificialIntelligence"
+                :type "void")
+                nil [1483 1560])
+            ("FindGroups" function
+               (:parent "ArtificialIntelligence"
+                :arguments 
+                  ( ("source" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::multiset" type
+                             (:template-specifier 
+                                ( ("Card" type nil nil nil)
+                                  ("Comparation" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1634 1684]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::vector" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1562 2375])
+            ("FindCardInGroups" function
+               (:parent "ArtificialIntelligence"
+                :arguments 
+                  ( ("card" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Card" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2423 2440])
+                    ("groups" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2441 2485]))                  
+                :type "bool")
+                nil [2377 2723])
+            ("AddFindSeqs" function
+               (:parent "ArtificialIntelligence"
+                :type "void")
+                nil [2725 2801])
+            ("FindSeqs" function
+               (:parent "ArtificialIntelligence"
+                :arguments 
+                  ( ("source" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::multiset" type
+                             (:template-specifier 
+                                ( ("Card" type nil nil nil)
+                                  ("Comparation" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2888 2938]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::multiset" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2803 3266])
+            ("FindOneColorSeq" function
+               (:parent "ArtificialIntelligence"
+                :arguments 
+                  ( ("color" variable (:type ("Card_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3360 3377])
+                    ("source" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::multiset" type
+                             (:template-specifier 
+                                ( ("Card" type nil nil nil)
+                                  ("Comparation" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3378 3428]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::multiset" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3268 4368])
+            ("FindCardInSeq" function
+               (:parent "ArtificialIntelligence"
+                :arguments 
+                  ( ("card" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Card" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4413 4430])
+                    ("sequence" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::multiset" type
+                             (:template-specifier 
+                                ( ("Card" type nil nil nil)
+                                  ("Comparation" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4431 4483]))                  
+                :type "bool")
+                nil [4370 4650])
+            ("FindCardInSeqs" function
+               (:parent "ArtificialIntelligence"
+                :arguments 
+                  ( ("card" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Card" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4696 4713])
+                    ("sequences" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::multiset" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4714 4783]))                  
+                :type "bool")
+                nil [4652 4976])
+            ("DecisionToTakeTheCard" function
+               (:parent "ArtificialIntelligence"
+                :arguments 
+                  ( ("card" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Card" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5029 5046]))                  
+                :type "bool")
+                nil [4978 6468])
+            ("RemoveCardFromDeck" function
+               (:parent "ArtificialIntelligence"
+                :arguments 
+                  ( ("card" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Card" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6518 6535]))                  
+                :type "void")
+                nil [6470 6732])
+            ("CreateCards" function
+               (:parent "ArtificialIntelligence"
+                :type "void")
+                nil [6734 7791])
+            ("ShowCards" function
+               (:parent "ArtificialIntelligence"
+                :type "void")
+                nil [7793 8152]))          
+      :file "ArtificialIntelligence.cpp"
+      :pointmax 8153
+      :fsize 8154
+      :lastmodtime '(22300 39547 686276 116000)
+      :unmatched-syntax nil))
+  :file "!home!klapeyron!Team_project_art!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "myCards.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "myCards.cpp"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(21663 3988 478958 0)
+      :unmatched-syntax nil))
+  :file "!media!klapeyron!UUI!kopie!Projekt!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

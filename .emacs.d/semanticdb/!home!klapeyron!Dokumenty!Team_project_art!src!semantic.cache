@@ -1,0 +1,40 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TableSubject.hpp" include nil nil [1 28])
+            ("DetectionSystem.hpp" include nil nil [29 59])
+            ("iostream" include (:system-flag t) nil [61 80])
+            ("chrono" include (:system-flag t) nil [81 98])
+            ("mock" type
+               (:superclasses 
+                  ( ("TableObserver" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [136 143])
+                    ("onUpdate" function
+                       (:arguments 
+                          ( ("snapshot" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TableSnapshot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [160 190]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [146 251]))                  
+                :type "class")
+                nil [100 254])
+            ("main" function (:type "int") nil [256 459]))          
+      :file "main.cpp"
+      :pointmax 460
+      :fsize 459
+      :lastmodtime '(22309 3872 644085 31000)
+      :unmatched-syntax nil))
+  :file "!home!klapeyron!Dokumenty!Team_project_art!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

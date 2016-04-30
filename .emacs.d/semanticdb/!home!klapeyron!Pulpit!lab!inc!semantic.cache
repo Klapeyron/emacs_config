@@ -1,0 +1,1051 @@
+;; Object inc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "inc/"
+  :tables
+  (list
+    (semanticdb-table "List.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("List_hpp" variable (:constant-flag t) nil [26 34])
+            ("iostream" include (:system-flag t) nil [36 55])
+            ("fstream" include (:system-flag t) nil [56 74])
+            ("Container.hpp" include nil nil [75 99])
+            ("Node" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [302 309])
+                    ("wartosc" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [438 448])
+                    ("nastepny" variable
+                       (:pointer 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [541 556])
+                    ("Node" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("val" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [905 911])
+                            ("wsk" variable
+                               (:pointer 1
+                                :default-value "{nullptr}"
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [912 933]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [900 966]))                  )
+                nil [271 969])
+            ("List" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("pierwszy" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1467 1485])
+                    ("ostatni" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1578 1595])
+                    ("rozmiar" variable (:type "int") (reparse-symbol classsubparts) [1663 1675])
+                    ("at" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("pozycja" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2029 2047]))                          
+                        :type ("Node" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2017 2048])
+                    ("public" label nil (reparse-symbol classsubparts) [2049 2056])
+                    ("List" function
+                       (:constructor-flag t
+                        :type ("List" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2352 2410])
+                    ("List" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("is" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2670 2687]))                          
+                        :type ("List" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2665 2688])
+                    ("push" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2911 2925])
+                            ("pozycja" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2926 2944]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2901 2945])
+                    ("push_back" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3106 3120]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3091 3121])
+                    ("pop" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pozycja" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3372 3390]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3366 3391])
+                    ("pop_back" function
+                       (:prototype-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3700 3713])
+                    ("size" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3804 3815])
+                    ("operacjaDoTestu" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4023 4046])
+                    ("wyswietl" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4143 4159])
+                    ("List" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4198 4206]))                  
+                :superclasses 
+                  ( ("FreeAccessContainer" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1312 4209])
+            ("../src/List.cpp" include nil nil [4210 4236]))          
+      :file "List.hpp"
+      :pointmax 4244
+      :fsize 4310
+      :lastmodtime '(21806 44836 362464 610000)
+      :unmatched-syntax '((punctuation 2260 . 2261) (DELETE 2254 . 2260) (punctuation 2252 . 2253) (semantic-list 2235 . 2251) (punctuation 2234 . 2235) (OPERATOR 2226 . 2234) (punctuation 2224 . 2225) (punctuation 2223 . 2224) (symbol 2222 . 2223) (punctuation 2221 . 2222) (symbol 2217 . 2221) (punctuation 2153 . 2154) (DELETE 2147 . 2153) (punctuation 2145 . 2146) (semantic-list 2128 . 2144) (punctuation 2126 . 2127) (symbol 2125 . 2126) (punctuation 2124 . 2125) (symbol 2120 . 2124) (punctuation 639 . 640) (DEFAULT 632 . 639) (punctuation 630 . 631) (semantic-list 627 . 629) (symbol 623 . 627) (punctuation 2818 . 2819) (DELETE 2812 . 2818) (punctuation 2810 . 2811) (semantic-list 2793 . 2809) (punctuation 2792 . 2793) (OPERATOR 2784 . 2792) (punctuation 2782 . 2783) (punctuation 2781 . 2782) (symbol 2780 . 2781) (punctuation 2779 . 2780) (symbol 2775 . 2779) (punctuation 2711 . 2712) (DELETE 2705 . 2711) (punctuation 2703 . 2704) (semantic-list 2686 . 2702) (punctuation 2684 . 2685) (symbol 2683 . 2684) (punctuation 2682 . 2683) (symbol 2678 . 2682) (punctuation 639 . 640) (DEFAULT 632 . 639) (punctuation 630 . 631) (semantic-list 627 . 629) (symbol 623 . 627))
+      :lexical-table 
+        '(("List_hpp")
+          )
+)
+    (semanticdb-table "Stack.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Stack_hpp" variable (:constant-flag t) nil [27 36])
+            ("List.hpp" include nil nil [38 57])
+            ("Container.hpp" include nil nil [58 82])
+            ("Stack" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("List" variable (:type "int") (reparse-symbol classsubparts) [562 570])
+                    ("dane" variable (:type ("List_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [636 651])
+                    ("public" label nil (reparse-symbol classsubparts) [652 659])
+                    ("Stack" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Stack" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [711 719])
+                    ("Stack" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("is" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [789 806]))                          
+                        :type ("Stack" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [783 807])
+                    ("push" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [955 969]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [945 970])
+                    ("pop" function
+                       (:prototype-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1249 1257])
+                    ("size" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1348 1359])
+                    ("wyswietl" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1456 1472])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1703 1712]))                  
+                :superclasses 
+                  ( ("LimitedAccessContainer" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [329 1715])
+            ("../src/Stack.cpp" include nil nil [1717 1744]))          
+      :file "Stack.hpp"
+      :pointmax 1752
+      :fsize 1778
+      :lastmodtime '(21784 27321 0 0)
+      :unmatched-syntax '((semantic-list 1700 . 1702) (symbol 1685 . 1700) (VOID 1680 . 1684) (punctuation 560 . 561) (symbol 550 . 559) (USING 544 . 549))
+      :lexical-table 
+        '(("Stack_hpp")
+          )
+)
+    (semanticdb-table "Queue.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Queue_hpp" variable (:constant-flag t) nil [27 36])
+            ("List.hpp" include nil nil [38 57])
+            ("Container.hpp" include nil nil [58 82])
+            ("Queue" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("List" variable (:type "int") (reparse-symbol classsubparts) [597 605])
+                    ("dane" variable (:type ("List_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [672 687])
+                    ("public" label nil (reparse-symbol classsubparts) [688 695])
+                    ("Queue" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Queue" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [747 755])
+                    ("Queue" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("is" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [825 842]))                          
+                        :type ("Queue" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [819 843])
+                    ("push" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1000 1014]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [990 1015])
+                    ("pop" function
+                       (:prototype-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1308 1316])
+                    ("size" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1407 1418])
+                    ("wyswietl" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1515 1531])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1761 1770]))                  
+                :superclasses 
+                  ( ("LimitedAccessContainer" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [364 1773])
+            ("../src/Queue.cpp" include nil nil [1775 1802]))          
+      :file "Queue.hpp"
+      :pointmax 1810
+      :fsize 1834
+      :lastmodtime '(21784 30550 0 0)
+      :unmatched-syntax '((semantic-list 1758 . 1760) (symbol 1743 . 1758) (VOID 1738 . 1742) (punctuation 595 . 596) (symbol 585 . 594) (USING 579 . 584))
+      :lexical-table 
+        '(("Queue_hpp")
+          )
+)
+    (semanticdb-table "ArrayList.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ArrayList_hpp" variable (:constant-flag t) nil [31 44])
+            ("fstream" include (:system-flag t) nil [46 64])
+            ("Container.hpp" include nil nil [65 89])
+            ("ArrayList" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("tablica" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [507 518])
+                    ("ilosc_elementow" variable (:type "int") (reparse-symbol classsubparts) [595 615])
+                    ("rozmiar" variable (:type "int") (reparse-symbol classsubparts) [688 700])
+                    ("move_forward" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [803 823])
+                    ("move_backward" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [931 952])
+                    ("resize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1101 1115])
+                    ("isfull" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1238 1252])
+                    ("public" label nil (reparse-symbol classsubparts) [1256 1263])
+                    ("ArrayList" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ArrayList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1567 1579])
+                    ("ArrayList" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("is" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1844 1861]))                          
+                        :type ("ArrayList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1834 1862])
+                    ("ArrayList" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("list" variable
+                               (:reference 1
+                                :type ("std::initializer_list" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1998 2029]))                          
+                        :type ("ArrayList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1988 2030])
+                    ("push" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2304 2318])
+                            ("pozycja" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2319 2337]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2294 2338])
+                    ("push_back" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2499 2513]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2484 2514])
+                    ("pop" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pozycja" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2810 2828]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2804 2829])
+                    ("pop_back" function
+                       (:prototype-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3138 3151])
+                    ("size" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3242 3253])
+                    ("operacjaDoTestu" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3461 3484])
+                    ("wyswietl" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3580 3596])
+                    ("ArrayList" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3645 3658]))                  
+                :superclasses 
+                  ( ("FreeAccessContainer" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [384 3661])
+            ("../src/ArrayList.cpp" include nil nil [3663 3694]))          
+      :file "ArrayList.hpp"
+      :pointmax 3702
+      :fsize 3761
+      :lastmodtime '(21784 16014 0 0)
+      :unmatched-syntax '((punctuation 1475 . 1476) (DELETE 1469 . 1475) (punctuation 1467 . 1468) (semantic-list 1448 . 1466) (punctuation 1447 . 1448) (OPERATOR 1439 . 1447) (punctuation 1437 . 1438) (symbol 1428 . 1437) (punctuation 1364 . 1365) (DELETE 1358 . 1364) (punctuation 1356 . 1357) (semantic-list 1337 . 1355) (symbol 1327 . 1336))
+      :lexical-table 
+        '(("ArrayList_hpp")
+          )
+)
+    (semanticdb-table "Container.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Container_hpp" variable (:constant-flag t) nil [31 44])
+            ("Benchmark.hpp" include nil nil [46 70])
+            ("FreeAccessContainer" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [267 274])
+                    ("push" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("elem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [457 471])
+                            ("pozycja" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [472 490]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [439 494])
+                    ("pop" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pozycja" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [662 680]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [648 685])
+                    ("size" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [739 762])
+                    ("wyswietl" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [832 860])
+                    ("FreeAccessContainer" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [911 944]))                  
+                :superclasses 
+                  ( ("IBenchmark" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [202 947])
+            ("LimitedAccessContainer" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1148 1155])
+                    ("push" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("elem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1270 1284]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1252 1289])
+                    ("pop" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1377 1397])
+                    ("size" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1451 1474])
+                    ("wyswietl" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1544 1572])
+                    ("LimitedAccessContainer" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1621 1657]))                  
+                :superclasses 
+                  ( ("IBenchmark" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1080 1660]))          
+      :file "Container.hpp"
+      :pointmax 1668
+      :fsize 1690
+      :lastmodtime '(21795 43355 108544 459000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Container_hpp")
+          )
+)
+    (semanticdb-table "Benchmark.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BENCHMARK_HPP" variable (:constant-flag t) nil [31 44])
+            ("RandomNumbersEngine.hpp" include nil nil [46 80])
+            ("TexCreator.hpp" include nil nil [81 106])
+            ("chrono" include (:system-flag t) nil [107 124])
+            ("IBenchmark" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [379 386])
+                    ("operacjaDoTestu" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [475 510]))                  
+                :type "class")
+                nil [360 513])
+            ("Benchmark" type
+               (:superclasses 
+                  ( ("RandomNumbersEngine" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("TexCreator" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("obiekt" variable (:type ("IBenchmark" type (:type "class") nil nil)) (reparse-symbol classsubparts) [704 723])
+                    ("public" label nil (reparse-symbol classsubparts) [724 731])
+                    ("Benchmark" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("interfejs" variable
+                               (:reference 1
+                                :type ("IBenchmark" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1071 1093])
+                            ("name" variable
+                               (:default-value "DFT_TEX_FILE_NAME"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1094 1130]))                          
+                        :type ("Benchmark" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1061 1171])
+                    ("testuj" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("repeats" variable (:type "int") (reparse-symbol arg-sub-list) [1575 1587]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [1561 1588]))                  
+                :type "class")
+                nil [579 1591]))          
+      :file "Benchmark.hpp"
+      :pointmax 1599
+      :fsize 1625
+      :lastmodtime '(21793 37065 428012 983000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BENCHMARK_HPP")
+          )
+)
+    (semanticdb-table "RandomNumbersEngine.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RandomNumbersEngine_HPP" variable (:constant-flag t) nil [41 64])
+            ("string" include (:system-flag t) nil [66 83])
+            ("random" include (:system-flag t) nil [84 101])
+            ("fstream" include (:system-flag t) nil [102 120])
+            ("RandomNumbersEngine" type
+               (:members 
+                  ( ("DFT_RND_FILE_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [480 523])
+                    ("wygenerujDouble" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [812 819])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [820 827]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [789 828])
+                    ("wygenerujInt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [1129 1135])
+                            ("b" variable (:type "int") (reparse-symbol arg-sub-list) [1136 1142]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1112 1143])
+                    ("public" label nil (reparse-symbol classsubparts) [1144 1151])
+                    ("zapiszDoPliku" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ilosc" variable (:type "int") (reparse-symbol arg-sub-list) [1398 1408])
+                            ("nazwa_pliku" variable
+                               (:default-value "DFT_RND_FILE_NAME"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1409 1452]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1379 1454])
+                    ("RandomNumbersEngine" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1502 1535]))                  
+                :type "class")
+                nil [379 1538]))          
+      :file "RandomNumbersEngine.hpp"
+      :pointmax 1546
+      :fsize 1568
+      :lastmodtime '(21793 34074 146183 569000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RandomNumbersEngine_HPP")
+          )
+)
+    (semanticdb-table "Sort.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Sort_hpp" variable (:constant-flag t) nil [26 34])
+            ("Container.hpp" include nil nil [36 60])
+            ("set" include (:system-flag t) nil [61 75])
+            ("quicksort" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("container" variable
+                       (:reference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112 125])
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) [126 135])
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [136 146]))                  )
+                nil [76 676])
+            ("i" variable
+               (:default-value "left"
+                :type "int")
+                nil [335 348])
+            ("j" variable
+               (:default-value "right"
+                :type "int")
+                nil [351 365])
+            ("temp" variable (:type "int") nil [368 377])
+            ("quicksort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("container" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [608 618])
+                    ("" variable (:type ("left" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [619 624])
+                    ("" variable (:type ("j" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [625 627]))                  
+                :type "int")
+                nil [598 628])
+            ("quicksort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("container" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [653 663])
+                    ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [664 666])
+                    ("" variable (:type ("right" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [667 673]))                  
+                :type "int")
+                nil [643 674])
+            ("tablica" variable
+               (:pointer 1
+                :type ("T" type (:type "class") nil nil))
+                nil [774 797])
+            ("tablica" variable
+               (:dereference 1
+                :default-value "container.pop()"
+                :type "int")
+                nil [848 877])
+            ("quicksort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tablica" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [891 899])
+                    ("" variable (:type ("left" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [899 904])
+                    ("" variable (:type ("right" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [904 910]))                  
+                :type "int")
+                nil [881 911])
+            ("push_back" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tablica" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [980 990]))                  
+                :type "int")
+                nil [970 992])
+            ("tablica" variable
+               (:pointer 1
+                :type ("T" type (:type "class") nil nil))
+                nil [1095 1106])
+            ("push_back" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("container" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1174 1184])
+                    ("" variable (:type ("pop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1184 1189]))                  
+                :type "int")
+                nil [1164 1191])
+            ("quicksort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tablica" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1210 1218])
+                    ("" variable (:type ("left" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1219 1224])
+                    ("" variable (:type ("right" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1225 1231]))                  
+                :type "int")
+                nil [1200 1232])
+            ("push" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tablica" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1298 1306])
+                    ("" variable (:type ("pop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1306 1311]))                  
+                :type "int")
+                nil [1293 1313])
+            ("v" variable
+               (:default-value "container[(left+right)/2]"
+                :type "int")
+                nil [1374 1408])
+            ("i" variable
+               (:default-value "left"
+                :type "int")
+                nil [1411 1424])
+            ("j" variable
+               (:default-value "right"
+                :type "int")
+                nil [1427 1441])
+            ("temp" variable (:type "int") nil [1444 1453])
+            ("quicksort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("container" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1684 1694])
+                    ("" variable (:type ("left" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1695 1700])
+                    ("" variable (:type ("j" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1701 1703]))                  
+                :type "int")
+                nil [1674 1704])
+            ("quicksort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("container" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1729 1739])
+                    ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1740 1742])
+                    ("" variable (:type ("right" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1743 1749]))                  
+                :type "int")
+                nil [1719 1750])
+            ("najwiekszy" variable (:type "int") nil [1813 1834])
+            ("temp" variable (:type "int") nil [1813 1834])
+            ("l" variable
+               (:default-value "2*i"
+                :type "int")
+                nil [1837 1858])
+            ("r" variable
+               (:default-value "(2*i)+1"
+                :type "int")
+                nil [1837 1858])
+            ("najwiekszy" variable
+               (:default-value "l"
+                :type "int")
+                nil [1912 1925])
+            ("najwiekszy" variable
+               (:default-value "i"
+                :type "int")
+                nil [1933 1946])
+            ("najwiekszy" variable
+               (:default-value "r"
+                :type "int")
+                nil [2009 2022])
+            ("heapify" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tablica" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2278 2286])
+                    ("" variable (:type ("rozmiar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2286 2294])
+                    ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2295 2297]))                  
+                :type "int")
+                nil [2270 2298])
+            ("temp" variable (:type "int") nil [2348 2357])
+            ("budKopiec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tablica" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2370 2378])
+                    ("" variable (:type ("rozmiar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2378 2386]))                  
+                :type "int")
+                nil [2360 2387]))          
+      :file "Sort.hpp"
+      :pointmax 2552
+      :fsize 2551
+      :lastmodtime '(21816 8711 981001 574000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Sort_hpp")
+          )
+)
+    (semanticdb-table "TexCreator.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TexCreator_HPP" variable (:constant-flag t) nil [32 46])
+            ("fstream" include (:system-flag t) nil [48 66])
+            ("cstring" include (:system-flag t) nil [67 85])
+            ("TexCreator" type
+               (:members 
+                  ( ("strumien" variable (:type ("std::ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [348 371])
+                    ("public" label nil (reparse-symbol classsubparts) [374 381])
+                    ("DFT_TEX_FILE_NAME" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [459 502])
+                    ("DFT_TEX_TABLE_CAPTION" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [565 612])
+                    ("inicjalizujTablice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rows" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [747 762]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [723 763])
+                    ("dodajTytul" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("names" variable (:type ("std::initializer_list" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [871 912]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [855 913])
+                    ("dodajPomiar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("potega" variable
+                               (:constant-flag t
+                                :type "long int")
+                                (reparse-symbol arg-sub-list) [998 1020])
+                            ("args" variable (:type ("std::initializer_list" type
+                                 (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1021 1053]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [981 1054])
+                    ("zakonczTablice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opis" variable
+                               (:default-value "DFT_TEX_TABLE_CAPTION"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1162 1202]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1142 1204])
+                    ("TexCreator" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:default-value "DFT_TEX_FILE_NAME"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1585 1621]))                          
+                        :type ("TexCreator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1574 1641])
+                    ("TexCreator" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1690 1714]))                  
+                :type "class")
+                nil [327 1717]))          
+      :file "TexCreator.hpp"
+      :pointmax 1725
+      :fsize 1745
+      :lastmodtime '(21816 431 705918 898000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TexCreator_HPP")
+          )
+)
+    (semanticdb-table "Test.hpp"
+      :file "Test.hpp"
+      :fsize 1297
+      :lastmodtime '(21787 62245 0 0))
+    (semanticdb-table "HashTable.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("HashTable_hpp" variable (:constant-flag t) nil [31 44])
+            ("string" include (:system-flag t) nil [46 63])
+            ("MAX_HASH_VALUE" variable
+               (:default-value "1023"
+                :type "int")
+                nil [174 200])
+            ("Element" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [387 394])
+                    ("key" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [436 452])
+                    ("value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [502 510])
+                    ("isEmpty" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [635 650])
+                    ("Element" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("k" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\"\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [796 821])
+                            ("val" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [823 838]))                          
+                        :type ("Element" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [788 862]))                  )
+                nil [346 865])
+            ("HashTable" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("dane" variable
+                       (:dereference 1
+                        :type ("Element" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1146 1178])
+                    ("at" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1321 1337]))                          
+                        :type ("Element" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1306 1338])
+                    ("findFreePlace" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1534 1550]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1516 1551])
+                    ("hash" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1755 1778]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1746 1779])
+                    ("public" label nil (reparse-symbol classsubparts) [1781 1788])
+                    ("HashTable" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1848 1860])
+                    ("add" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2025 2048])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2049 2064]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2016 2065])
+                    ("getElem" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2204 2227]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2194 2228])
+                    ("HashTable" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2277 2298]))                  )
+                nil [1031 2301])
+            ("../src/HashTable.cpp" include nil nil [2303 2334]))          
+      :file "HashTable.hpp"
+      :pointmax 2362
+      :fsize 2414
+      :lastmodtime '(21806 44682 875801 22000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HashTable_hpp")
+          )
+))
+  :file "!home!klapeyron!Pulpit!lab!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,47 @@
+;; Object Timer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Timer/"
+  :tables
+  (list
+    (semanticdb-table "Timer.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Timer.hpp" include nil nil [1 21])
+            ("Timer" function
+               (:constructor-flag t
+                :parent "Timer"
+                :arguments 
+                  ( ("id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36 58]))                  
+                :type ("Timer" type (:type "class") nil nil))
+                nil [23 76])
+            ("publishTime" function
+               (:parent "Timer"
+                :type "void")
+                nil [78 311]))          
+      :file "Timer.cpp"
+      :pointmax 312
+      :fsize 311
+      :lastmodtime '(22308 63657 122992 934000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Timer.hpp"
+      :file "Timer.hpp"
+      :fsize 192
+      :lastmodtime '(22308 63229 289550 570000))
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Timer.hpp" include nil nil [1 21])
+            ("iostream" include (:system-flag t) nil [22 41])
+            ("main" function (:type "int") nil [43 139]))          
+      :file "main.cpp"
+      :pointmax 140
+      :fsize 139
+      :lastmodtime '(22308 63601 104814 275000)
+      :unmatched-syntax nil))
+  :file "!home!klapeyron!Eventer!source!Timer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

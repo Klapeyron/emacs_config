@@ -1,0 +1,257 @@
+;; Object zdjecia/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "zdjecia/"
+  :tables
+  (list
+    (semanticdb-table "alternatywa.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("fstream" include (:system-flag t) nil [21 39])
+            ("iomanip" include (:system-flag t) nil [40 58])
+            ("vector" include (:system-flag t) nil [59 76])
+            ("memory" include (:system-flag t) nil [77 94])
+            ("cstring" include (:system-flag t) nil [95 113])
+            ("opencv/cv.hpp" include (:system-flag t) nil [114 138])
+            ("MAX_COLOR" variable
+               (:constant-flag t
+                :default-value "4"
+                :type "int")
+                nil [140 164])
+            ("MAX_FIGURE" variable
+               (:constant-flag t
+                :default-value "13"
+                :type "int")
+                nil [165 191])
+            ("MAX_ENEMY_CARDS" variable
+               (:constant-flag t
+                :default-value "10"
+                :type "int")
+                nil [193 224])
+            ("THRESHOLD" variable
+               (:constant-flag t
+                :default-value "0.99"
+                :type "double")
+                nil [225 255])
+            ("PRT_SCR_IMAGE_NAME" variable
+               (:constant-flag t
+                :default-value "\"foto.png\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [256 306])
+            ("MATCH_METHOD" variable
+               (:constant-flag t
+                :default-value "CV_TM_CCOEFF_NORMED"
+                :type "int")
+                nil [307 352])
+            ("MAX_TRACKBAR" variable
+               (:constant-flag t
+                :default-value "15"
+                :type "int")
+                nil [353 381])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [588 607])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [608 628])
+            ("figureImageNames" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("string" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [630 997])
+            ("colorImageNames" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("string" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [999 1069])
+            ("Card" type
+               (:members 
+                  ( ("color" variable (:type ("Card_Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1086 1103])
+                    ("figure" variable (:type ("Card_Figure" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1106 1125])
+                    ("public" label nil (reparse-symbol classsubparts) [1126 1133])
+                    ("Card" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("newColor" variable
+                               (:default-value "Card_Color"
+                                :type ("Card_Color" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1150 1182])
+                            ("" variable (:type ("None" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1184 1189])
+                            ("newFigure" variable
+                               (:default-value "Card_Figure"
+                                :type ("Card_Figure" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1206 1241])
+                            ("" variable (:type ("None" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1243 1248]))                          
+                        :type ("Card" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1145 1294])
+                    ("getColor" function
+                       (:constant-flag t
+                        :type ("Card_Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1299 1356])
+                    ("getFigure" function
+                       (:constant-flag t
+                        :type ("Card_Figure" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1359 1419])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1440 1457]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1423 1538]))                  
+                :type "class")
+                nil [1071 1541])
+            ("myCards" type
+               (:members 
+                  ( ("myCards" variable
+                       (:dereference 2
+                        :type ("Card" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1561 1597])
+                    ("public" label nil (reparse-symbol classsubparts) [1631 1638])
+                    ("addCard" function
+                       (:arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1654 1665]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1641 1817])
+                    ("deleteCard" function
+                       (:arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1839 1850]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1823 2019]))                  
+                :type "class")
+                nil [1543 2022])
+            ("enemyCards" type
+               (:members 
+                  ( ("enemyCard" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("Card" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2045 2068])
+                    ("public" label nil (reparse-symbol classsubparts) [2073 2080])
+                    ("addCard" function
+                       (:arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2109 2126]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2096 2161])
+                    ("deleteCard" function
+                       (:arguments 
+                          ( ("searchCard" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2196 2219]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2180 2386])
+                    ("getCardsLeft" function
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2387 2455])
+                    ("getLastTakenCard" function
+                       (:constant-flag t
+                        :type ("Card" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2456 2521]))                  
+                :type "class")
+                nil [2024 2526])
+            ("stackCards" type
+               (:members 
+                  ( ("lostCards" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Card" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2549 2577])
+                    ("public" label nil (reparse-symbol classsubparts) [2582 2589])
+                    ("colorStackCard" function
+                       (:arguments 
+                          ( ("img" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2617 2632]))                          
+                        :type ("Card_Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2590 2665])
+                    ("getColor" function
+                       (:arguments 
+                          ( ("img" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2688 2707]))                          
+                        :type ("Card_Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2667 2842])
+                    ("getFigure" function
+                       (:arguments 
+                          ( ("img" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2867 2882]))                          
+                        :type ("Card_Figure" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2844 2998]))                  
+                :type "class")
+                nil [2528 3001])
+            ("detectionSystem" type
+               (:members 
+                  ( ("figure_templates" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Mat" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3029 3063])
+                    ("color_templates" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Mat" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3066 3099])
+                    ("loadedTableImage" variable (:type ("Mat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3102 3123])
+                    ("public" label nil (reparse-symbol classsubparts) [3125 3132])
+                    ("detectionSystem" function
+                       (:constructor-flag t
+                        :type ("detectionSystem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3135 3391]))                  
+                :type "class")
+                nil [3003 3394])
+            ("Table" type
+               (:superclasses 
+                  ( ("enemyCards" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("myCards" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("stackCards" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("detectionSystem" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3470 3477]))                  
+                :type "class")
+                nil [3396 3575])
+            ("main" function (:type "int") nil [3577 4955]))          
+      :file "alternatywa.cpp"
+      :pointmax 4956
+      :fsize 4952
+      :lastmodtime '(21815 33411 14642 734000)
+      :unmatched-syntax nil))
+  :file "!home!klapeyron!Pulpit!projekt!zdjecia!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

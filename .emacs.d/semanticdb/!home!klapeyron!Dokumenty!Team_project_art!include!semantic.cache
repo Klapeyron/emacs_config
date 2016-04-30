@@ -1,0 +1,211 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "Card.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Position.hpp" include nil nil [15 38])
+            ("iostream" include (:system-flag t) nil [39 58])
+            ("++" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type ("Card_Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [301 316]))                  
+                :type ("Card_Color" type (:type "class") nil nil))
+                nil [266 390])
+            ("++" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Card_Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [426 447]))                  
+                :type ("Card_Color" type (:type "class") nil nil))
+                nil [391 517])
+            ("--" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type ("Card_Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [553 568]))                  
+                :type ("Card_Color" type (:type "class") nil nil))
+                nil [518 642])
+            ("--" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Card_Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [678 699]))                  
+                :type ("Card_Color" type (:type "class") nil nil))
+                nil [643 769])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable (:type ("Card_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [804 817]))                  
+                :type ("Card_Color" type (:type "class") nil nil))
+                nil [770 829])
+            ("begin" function
+               (:typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable (:type ("Card_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [860 873]))                  
+                :type ("Card_Color" type (:type "class") nil nil))
+                nil [830 901])
+            ("end" function
+               (:typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable (:type ("Card_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [930 943]))                  
+                :type ("Card_Color" type (:type "class") nil nil))
+                nil [902 1029])
+            ("++" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type ("Card_Figure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1067 1083]))                  
+                :type ("Card_Figure" type (:type "class") nil nil))
+                nil [1031 1158])
+            ("++" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Card_Figure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1195 1217]))                  
+                :type ("Card_Figure" type (:type "class") nil nil))
+                nil [1159 1288])
+            ("--" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type ("Card_Figure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1325 1341]))                  
+                :type ("Card_Figure" type (:type "class") nil nil))
+                nil [1289 1416])
+            ("--" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Card_Figure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1453 1475]))                  
+                :type ("Card_Figure" type (:type "class") nil nil))
+                nil [1417 1546])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable (:type ("Card_Figure" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1582 1596]))                  
+                :type ("Card_Figure" type (:type "class") nil nil))
+                nil [1547 1608])
+            ("begin" function
+               (:typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable (:type ("Card_Figure" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1640 1654]))                  
+                :type ("Card_Figure" type (:type "class") nil nil))
+                nil [1609 1679])
+            ("end" function
+               (:typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("x" variable (:type ("Card_Figure" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1709 1723]))                  
+                :type ("Card_Figure" type (:type "class") nil nil))
+                nil [1680 1808])
+            ("Card" type
+               (:superclasses 
+                  ( ("Position" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("color" variable (:type ("Card_Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1842 1859])
+                    ("figure" variable (:type ("Card_Figure" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1862 1881])
+                    ("public" label nil (reparse-symbol classsubparts) [1883 1890])
+                    ("Card" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("newFigure" variable
+                               (:default-value "Card_Figure"
+                                :type ("Card_Figure" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1917 1952])
+                            ("" variable (:type ("None" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1954 1959])
+                            ("newColor" variable
+                               (:default-value "Card_Color"
+                                :type ("Card_Color" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1986 2018])
+                            ("" variable (:type ("None" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2020 2025]))                          
+                        :type ("Card" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1912 2064])
+                    ("getColor" function (:type ("Card_Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2078 2123])
+                    ("getFigure" function (:type ("Card_Figure" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2136 2184])
+                    ("==" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2204 2221]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2187 2228])
+                    ("!=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2248 2265]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2231 2272]))                  
+                :type "class")
+                nil [1810 2275]))          
+      :file "Card.hpp"
+      :pointmax 2276
+      :fsize 2275
+      :lastmodtime '(22308 64601 556119 435000)
+      :unmatched-syntax '((symbol 2126 . 2135) (symbol 2068 . 2077) (punctuation 2064 . 2065) (punctuation 2019 . 2020) (punctuation 2018 . 2019) (punctuation 1953 . 1954) (punctuation 1952 . 1953) (EXPLICIT 1903 . 1911) (symbol 1893 . 1902) (punctuation 263 . 264) (semantic-list 177 . 263) (INT 173 . 176) (UNSIGNED 164 . 172) (punctuation 162 . 163) (symbol 150 . 161) (CLASS 144 . 149) (ENUM 139 . 143) (punctuation 136 . 137) (semantic-list 97 . 136) (INT 93 . 96) (UNSIGNED 84 . 92) (punctuation 82 . 83) (symbol 71 . 81) (CLASS 65 . 70) (ENUM 60 . 64) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "Position.hpp"
+      :file "Position.hpp"
+      :fsize 215
+      :lastmodtime '(22299 19672 254317 856000)))
+  :file "!home!klapeyron!Dokumenty!Team_project_art!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

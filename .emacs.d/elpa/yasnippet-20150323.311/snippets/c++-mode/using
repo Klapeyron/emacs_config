@@ -1,0 +1,5 @@
+#name : using ... 
+# key: using
+# --
+using ${1:alias} = ${2:type};
+$0

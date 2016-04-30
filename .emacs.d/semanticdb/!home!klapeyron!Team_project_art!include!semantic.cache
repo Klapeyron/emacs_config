@@ -1,0 +1,375 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "GameControl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Card.hpp" include nil nil [15 34])
+            ("IGameControl.hpp" include nil nil [35 62])
+            ("Position.hpp" include nil nil [63 86])
+            ("ButtonsSnapshot.hpp" include nil nil [87 117])
+            ("unistd.h" include (:system-flag t) nil [118 137])
+            ("X11/Xlib.h" include (:system-flag t) nil [138 159])
+            ("X11/Xutil.h" include (:system-flag t) nil [160 182])
+            ("iostream" include (:system-flag t) nil [183 202])
+            ("string.h" include (:system-flag t) nil [203 222])
+            ("GameControl" type
+               (:superclasses 
+                  ( ("IGameControl" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [265 273])
+                    ("setPosition" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [293 319]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [276 320])
+                    ("mouseClick" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("button" variable (:type "int") (reparse-symbol arg-sub-list) [339 350]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [323 351])
+                    ("public" label nil (reparse-symbol classsubparts) [352 359])
+                    ("pickCardFromHiddenStack" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [362 393])
+                    ("pickCardFromStack" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [396 421])
+                    ("throwMyCard" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [441 454]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [424 455])
+                    ("endGame" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [458 473])
+                    ("touchCard" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [491 504]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [476 505])
+                    ("pressOK" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [508 523]))                  
+                :type "class")
+                nil [223 528]))          
+      :file "GameControl.hpp"
+      :pointmax 529
+      :fsize 528
+      :lastmodtime '(22300 39547 686276 116000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "Card.hpp"
+      :file "Card.hpp"
+      :fsize 1733
+      :lastmodtime '(22300 39547 686276 116000))
+    (semanticdb-table "IGameControl.hpp"
+      :file "IGameControl.hpp"
+      :fsize 302
+      :lastmodtime '(22300 39547 686276 116000))
+    (semanticdb-table "Position.hpp"
+      :file "Position.hpp"
+      :fsize 215
+      :lastmodtime '(22300 39547 686276 116000))
+    (semanticdb-table "ButtonsSnapshot.hpp"
+      :file "ButtonsSnapshot.hpp"
+      :fsize 455
+      :lastmodtime '(22300 39547 686276 116000))
+    (semanticdb-table "ArtificialIntelligence.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [15 34])
+            ("vector" include (:system-flag t) nil [35 52])
+            ("list" include (:system-flag t) nil [53 68])
+            ("set" include (:system-flag t) nil [69 83])
+            ("algorithm" include (:system-flag t) nil [84 104])
+            ("type_traits" include (:system-flag t) nil [105 127])
+            ("IGameControl.hpp" include nil nil [129 156])
+            ("TableObserver.hpp" include nil nil [157 185])
+            ("Comparation" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [226 240])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [241 255]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [210 305]))                  
+                :type "struct")
+                nil [187 308])
+            ("ArtificialIntelligence" type
+               (:superclasses 
+                  ( ("TableObserver" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("gameControl" variable (:type ("IGameControl" type (:type "class") nil nil)) (reparse-symbol classsubparts) [365 392])
+                    ("minSeqLen" variable
+                       (:constant-flag t
+                        :default-value "3"
+                        :type "int")
+                        (reparse-symbol classsubparts) [395 419])
+                    ("cardDeck" variable (:type ("std::list" type
+                         (:template-specifier 
+                            ( ("Card" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [422 450])
+                    ("cards" variable (:type ("std::multiset" type
+                         (:template-specifier 
+                            ( ("Card" type nil nil nil)
+                              ("Comparation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [465 507])
+                    ("sequences" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::multiset" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [533 595])
+                    ("groups" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [620 664])
+                    ("public" label nil (reparse-symbol classsubparts) [687 694])
+                    ("ArtificialIntelligence" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("gameControlInterface" variable
+                               (:reference 1
+                                :type ("IGameControl" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [720 756]))                          
+                        :type ("ArtificialIntelligence" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [697 1059])
+                    ("onUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TableSnapshot" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1076 1097]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1062 1098])
+                    ("ReturnSeqs" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::multiset" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1104 1198])
+                    ("Seqs" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::multiset" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1204 1293])
+                    ("ReturnGroups" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1299 1377])
+                    ("Groups" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1383 1456])
+                    ("ShowGroups" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1462 1480])
+                    ("ShowSeqs" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1486 1502])
+                    ("AddFindGroups" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1508 1529])
+                    ("FindGroups" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::multiset" type
+                                     (:template-specifier 
+                                        ( ("Card" type nil nil nil)
+                                          ("Comparation" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1583 1633]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1535 1634])
+                    ("FindCardInGroups" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1662 1679])
+                            ("groups" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::vector" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1680 1724]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1640 1725])
+                    ("AddFindSeqs" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1731 1750])
+                    ("FindSeqs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::multiset" type
+                                     (:template-specifier 
+                                        ( ("Card" type nil nil nil)
+                                          ("Comparation" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1817 1867]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::multiset" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1756 1868])
+                    ("FindOneColorSeq" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("color" variable (:type ("Card_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1942 1959])
+                            ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::multiset" type
+                                     (:template-specifier 
+                                        ( ("Card" type nil nil nil)
+                                          ("Comparation" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1960 2010]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::multiset" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1874 2011])
+                    ("FindCardInSeq" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2036 2053])
+                            ("sequence" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::multiset" type
+                                     (:template-specifier 
+                                        ( ("Card" type nil nil nil)
+                                          ("Comparation" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2054 2106]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2017 2107])
+                    ("FindCardInSeqs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2133 2150])
+                            ("sequences" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::multiset" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2151 2220]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2113 2221])
+                    ("DecisionToTakeTheCard" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2254 2271]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2227 2272])
+                    ("RemoveCardFromDeck" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("card" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Card" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2302 2319]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2278 2320])
+                    ("CreateCards" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2326 2345])
+                    ("ShowCards" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2351 2368]))                  
+                :type "class")
+                nil [310 2371]))          
+      :file "ArtificialIntelligence.hpp"
+      :pointmax 2372
+      :fsize 2371
+      :lastmodtime '(22300 39547 686276 116000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "TableObserver.hpp"
+      :file "TableObserver.hpp"
+      :fsize 129
+      :lastmodtime '(22300 39547 686276 116000)))
+  :file "!home!klapeyron!Team_project_art!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

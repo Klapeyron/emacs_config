@@ -1,0 +1,168 @@
+;; Object inc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "inc/"
+  :tables
+  (list
+    (semanticdb-table "Benchmark.hh"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BENCKMARK_HH" variable (:constant-flag t) nil [30 42])
+            ("ctime" include (:system-flag t) nil [44 60])
+            ("StrukturaDanych.hh" include nil nil [62 91])
+            ("Benchmark" type
+               (:members 
+                  ( ("czas" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol classsubparts) [753 772])
+                    ("probki" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [893 908])
+                    ("public" label nil (reparse-symbol classsubparts) [909 916])
+                    ("wsk" variable
+                       (:pointer 1
+                        :type ("StrukturaDanych" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1020 1041])
+                    ("testuj" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1349 1362])
+                    ("wypisz" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1447 1461])
+                    ("Benchmark" function
+                       (:constructor-flag t
+                        :type ("Benchmark" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1555 1871]))                  
+                :type "class")
+                nil [644 1877]))          
+      :file "Benchmark.hh"
+      :pointmax 1887
+      :fsize 1941
+      :lastmodtime '(21779 9308 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BENCKMARK_HH")
+          )
+)
+    (semanticdb-table "StrukturaDanych.hh"
+      :file "StrukturaDanych.hh"
+      :fsize 748
+      :lastmodtime '(21779 9308 0 0))
+    (semanticdb-table "Lista_array.hh"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("LISTA_ARRAY_HH" variable (:constant-flag t) nil [32 46])
+            ("cstdlib" include (:system-flag t) nil [47 65])
+            ("iostream" include (:system-flag t) nil [66 85])
+            ("StrukturaDanych.hh" include nil nil [86 115])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [117 137])
+            ("Lista_array" type
+               (:superclasses 
+                  ( ("StrukturaDanych" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("wsk" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [660 669])
+                    ("rozm" variable (:type "int") (reparse-symbol classsubparts) [752 761])
+                    ("ile_probek" variable (:type "int") (reparse-symbol classsubparts) [869 884])
+                    ("public" label nil (reparse-symbol classsubparts) [885 892])
+                    ("push" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [1350 1359])
+                            ("element" variable (:type "int") (reparse-symbol arg-sub-list) [1359 1371]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1340 1372])
+                    ("pop" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [1874 1883])
+                            ("element" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1883 1896]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1865 1897])
+                    ("inicjalizuj" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ile" variable (:type "int") (reparse-symbol arg-sub-list) [2194 2202]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2177 2203])
+                    ("wykonaj1" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2493 2509])
+                    ("wykonaj2" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2860 2876])
+                    ("size" function (:type "int") (reparse-symbol classsubparts) [3051 3083])
+                    ("Lista_array" function
+                       (:constructor-flag t
+                        :type ("Lista_array" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3167 3215])
+                    ("wyswietl" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3219 3235])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("pozycja" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3254 3272]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3238 3273])
+                    ("quicksort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("left" variable (:type "int") (reparse-symbol arg-sub-list) [3293 3302])
+                            ("right" variable (:type "int") (reparse-symbol arg-sub-list) [3303 3313]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3278 3314])
+                    ("heapify" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("heap_size" variable (:type "int") (reparse-symbol arg-sub-list) [3519 3533])
+                            ("i" variable (:type "int") (reparse-symbol arg-sub-list) [3534 3540]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3505 3541])
+                    ("budKopiec" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rozmiar" variable (:type "int") (reparse-symbol arg-sub-list) [3733 3745]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3718 3746])
+                    ("sort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rozmiar" variable (:type "int") (reparse-symbol arg-sub-list) [3885 3897]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3875 3898]))                  
+                :type "class")
+                nil [509 3901]))          
+      :file "Lista_array.hh"
+      :pointmax 3912
+      :fsize 4030
+      :lastmodtime '(21798 4387 237506 527000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LISTA_ARRAY_HH")
+          )
+))
+  :file "!home!klapeyron!Pulpit!Piotrek!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

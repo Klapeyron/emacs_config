@@ -1,0 +1,33 @@
+;; Object 01-diody/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "01-diody/"
+  :tables
+  (list
+    (semanticdb-table "diody.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("F_CPU" variable (:constant-flag t) nil [215 220])
+            ("util/delay.h" include (:system-flag t) nil [267 290])
+            ("avr/io.h" include (:system-flag t) nil [291 310])
+            ("delay_ms" function
+               (:arguments 
+                  ( ("ms" variable (:type "int") (reparse-symbol arg-sub-list) [327 334]))                  
+                :type "void")
+                nil [312 406])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [418 423]))                  
+                :type "int")
+                nil [409 773]))          
+      :file "diody.c"
+      :pointmax 774
+      :fsize 821
+      :lastmodtime '(21534 43436 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("F_CPU" . ((symbol "8000000UL" 221 . 230)))
+          )
+))
+  :file "!home!klapeyron!Pobrane!01-diody!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

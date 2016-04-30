@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: make_unique
+# key: unique
+# --
+auto ${1:name} = std::make_unique<${2:Type}>($0);

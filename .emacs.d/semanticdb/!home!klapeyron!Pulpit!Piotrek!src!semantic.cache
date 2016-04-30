@@ -1,0 +1,142 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("fstream" include (:system-flag t) nil [21 39])
+            ("Benchmark.hh" include nil nil [40 63])
+            ("Lista.hh" include nil nil [64 83])
+            ("Lista_array.hh" include nil nil [84 109])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [111 131])
+            ("main" function (:type "int") nil [133 644]))          
+      :file "main.cpp"
+      :pointmax 645
+      :fsize 646
+      :lastmodtime '(21798 4374 757937 126000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Benchmark.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Benchmark.hh" include nil nil [1 24])
+            ("ctime" include (:system-flag t) nil [25 41])
+            ("iostream" include (:system-flag t) nil [43 62])
+            ("ratio" include (:system-flag t) nil [63 79])
+            ("chrono" include (:system-flag t) nil [80 97])
+            ("LICZBA_POWTORZEN" variable (:constant-flag t) nil [107 123])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [128 148])
+            ("testuj" function
+               (:parent "Benchmark"
+                :type "int")
+                nil [150 657])
+            ("wypisz" function
+               (:parent "Benchmark"
+                :type "void")
+                nil [659 869]))          
+      :file "Benchmark.cpp"
+      :pointmax 870
+      :fsize 869
+      :lastmodtime '(21779 55462 768501 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LICZBA_POWTORZEN" . ((number "10" 124 . 126)))
+          )
+)
+    (semanticdb-table "Lista_array.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Lista_array.hh" include nil nil [1 26])
+            ("iostream" include (:system-flag t) nil [27 46])
+            ("fstream" include (:system-flag t) nil [47 65])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [67 87])
+            ("push" function
+               (:parent "Lista_array"
+                :arguments 
+                  ( ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [112 121])
+                    ("element" variable (:type "int") (reparse-symbol arg-sub-list) [121 133]))                  
+                :type "bool")
+                nil [89 433])
+            ("pop" function
+               (:parent "Lista_array"
+                :arguments 
+                  ( ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [458 467])
+                    ("element" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [467 480]))                  
+                :type "bool")
+                nil [436 729])
+            ("inicjalizuj" function
+               (:parent "Lista_array"
+                :arguments 
+                  ( ("ile" variable (:type "int") (reparse-symbol arg-sub-list) [761 769]))                  
+                :type "bool")
+                nil [731 851])
+            ("wykonaj1" function
+               (:parent "Lista_array"
+                :type "void")
+                nil [853 1041])
+            ("wykonaj2" function
+               (:parent "Lista_array"
+                :type "void")
+                nil [1043 1109])
+            ("wyswietl" function
+               (:parent "Lista_array"
+                :type "void")
+                nil [1111 1203])
+            ("[]" function
+               (:operator-flag t
+                :parent "Lista_array"
+                :arguments 
+                  ( ("pozycja" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1233 1251]))                  
+                :type "int")
+                nil [1204 1276])
+            ("quicksort" function
+               (:parent "Lista_array"
+                :arguments 
+                  ( ("left" variable (:type "int") (reparse-symbol arg-sub-list) [1306 1315])
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [1316 1326]))                  
+                :type "void")
+                nil [1278 1813])
+            ("heapify" function
+               (:parent "Lista_array"
+                :arguments 
+                  ( ("rozmiar_kopca" variable (:type "int") (reparse-symbol arg-sub-list) [1842 1860])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1861 1867]))                  
+                :type "void")
+                nil [1815 2206])
+            ("budKopiec" function
+               (:parent "Lista_array"
+                :arguments 
+                  ( ("rozmiar" variable (:type "int") (reparse-symbol arg-sub-list) [2236 2248]))                  
+                :type "void")
+                nil [2208 2307])
+            ("sort" function
+               (:parent "Lista_array"
+                :arguments 
+                  ( ("rozmiar" variable (:type "int") (reparse-symbol arg-sub-list) [2332 2344]))                  
+                :type "void")
+                nil [2309 2512]))          
+      :file "Lista_array.cpp"
+      :pointmax 2513
+      :fsize 2512
+      :lastmodtime '(21798 4532 456495 830000)
+      :unmatched-syntax nil))
+  :file "!home!klapeyron!Pulpit!Piotrek!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
