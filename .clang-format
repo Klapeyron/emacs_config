@@ -1,0 +1,12 @@
+BasedOnStyle: Google
+AlignAfterOpenBracket: Align
+BreakBeforeBraces: Allman
+UseTab: Never
+Language: Cpp
+Standard: Cpp11
+DerivePointerAlignment: false
+PointerAlignment: Middle
+SortIncludes: true
+SpaceBeforeAssignmentOperators: true
+TabWidth: 2
+AllowShortBlocksOnASingleLine: false
