@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: benchmark
-# key: bench
-# --
-auto before = std::chrono::high_resolution_clock::now();
-$0
-auto after = std::chrono::high_resolution_clock::now();
-std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(after-before).count() << std::endl;

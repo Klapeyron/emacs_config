@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: test case
-# key: tc
-# group: testing
-# --
-TEST (`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`, ${2:description})
-{
-	$0
-}

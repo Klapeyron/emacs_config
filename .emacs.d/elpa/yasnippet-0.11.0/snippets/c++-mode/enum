@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: enum
-# key: enum
-# --
-
-enum class ${1:NAME} : unsigned {$0}; 

@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: lambda
-# key: []
-# --
-auto ${1:name} = [${2:}](${3:})
-{
-	$0
-};
